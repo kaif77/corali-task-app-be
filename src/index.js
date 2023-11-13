@@ -11,7 +11,7 @@ const ConnectDatabase = require("./api/v1/helpers/ConnectDatabase");
 const app = express();
 const PORT = Configs.DEV_PORT || 3308;
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "*",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
